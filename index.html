@@ -1,0 +1,44 @@
+<!--
+Este es la HTML. Contiene informacion sobre los elementos en la pagina y como estan organizados.
+-->
+
+
+<html>
+  <title>2Brains</title>
+
+  <h2> Welcome to 2Brains RestAPI's</h2>
+<body>
+
+  <script src="js/helperFunctions.js"></script>
+
+    <p>
+      Click here if you would like to view all posts who ID's are in the Fibonnaci Sequence up to 100.
+    </p>
+    <button type="submit" onclick="findFibonnaci()">Fibonnaci</button><br><br>
+
+    <p>
+      Use the form below to search posts by text.
+    </p>
+    <form action="javascript:searchPosts(search.value)">
+    Search Posts: <input type="text" name="Search" value="Hello World" id="search"><br>
+    <input type="submit" value="Submit">
+    </form>
+
+    <p>
+      Use the form below to find all comments associated with a particular post by ID.
+    </p>
+    <form action="javascript:findComments(postID.value)">
+    Post ID: <input type="number" name="Post ID" id="postID" min=1><br>
+    <input type="submit" value="Submit">
+    </form>
+
+    <h1>Output</h1>
+    <div id = "output">
+
+
+
+    </div>
+
+
+</body>
+</html>
